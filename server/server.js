@@ -107,14 +107,10 @@ api.post('/family/update', (req, res) => { families.updateFamily(req, res)})
 
 app.use('/api', api);
 
-app.get('/', (req, res) => { res.send(package.description)})
-
-
-// app.use('/', express.static(path.join(__dirname, '../dist/crm')));
-
-// app.get('*', (req, res, next) => {
-//     res.sendFile(path.join(__dirname, '../dist/crm/index.html'));
-// });
+app.use('/', express.static(path.join(__dirname, '../client/dist/client')));
+app.get('*', (req, res, next) => {
+    res.sendFile(path.join(__dirname, '../client/dist/client/index.html'));
+});
 
 
 
