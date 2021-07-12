@@ -1,0 +1,24 @@
+{
+    "/api/*": {
+      "target": "http://localhost:8070",
+      "secure": false,
+      "changeOrigin": true
+    },
+    "/download/*": {
+      "target": "http://localhost:8070",
+      "secure": false,
+      "changeOrigin": true
+    },
+
+    "/attachments/*": {
+      "target": "http://localhost:8070",
+      "secure": false,
+      "changeOrigin": true
+    },
+
+    "/socket.io/*": {
+      "target": "http://localhost:8070",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }

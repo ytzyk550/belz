@@ -1,0 +1,10 @@
+<crud-table 
+    [tableData]="anashList" 
+    [columnsData]="columnsData" 
+    [columns]="columns"
+    (onRowClick)="rowClick($event)"
+    (onEdit)="editRow($event)"
+    (onDelete)="deleteRow($event)"
+    (onCreate)="create()"
+    >
+</crud-table>

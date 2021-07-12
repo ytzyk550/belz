@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: 'Arimo', sans-serif;
+    /* font-family: Roboto, "Helvetica Neue", sans-serif;  */
+    
+}
+
+* {
+    font-family: 'Arimo', sans-serif;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+mat-form-field.form-field {
+    padding: 10px;
+}
+
+.button-bottom-left{
+    position: fixed !important;
+    left: 35px;
+    bottom: 25px;
+}
+
+.show-hover .show-hover-buttons{
+    opacity: 0 !important;
+}
+.show-hover:hover .show-hover-buttons{
+    opacity: 1 !important;
+}

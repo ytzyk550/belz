@@ -1,0 +1,8 @@
+<form [formGroup]="formGroup">
+    <mat-form-field *ngFor="let input of inputs" class="form-field">
+        <input matInput placeholder="{{input.label}}" formControlName="{{input.control}}">
+        <mat-error *ngIf="formGroup.get(input.control)?.hasError('required')">{{ input.requiredError ? input.requiredError : 'שדה חובה'}}</mat-error>
+        <mat-error *ngIf="formGroup.get(input.control)?.hasError('pattern')">{{ input.patternError ? input.patternError : 'ערך שגוי'}}</mat-error>
+    </mat-form-field>
+    <button mat-stroked-button [disabled]="!formGroup.valid" (click)="onSubmit()">שמור</button>
+</form>
